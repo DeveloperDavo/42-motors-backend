@@ -5,7 +5,7 @@ const port = process.env.PORT || 5000;
 
 app.use(cors());
 
-app.get("/", (req, res) =>
+app.get("/actions", (req, res) =>
   res.json({
     actions: [
       { type: "UNLOCK", time: 1558985702333, status: "PENDING" },
